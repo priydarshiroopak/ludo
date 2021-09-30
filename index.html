@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>
+            MY GAME | LUDO
+        </title>
+        <link rel="shortcut icon" href="icons/favicon.svg" type="image/x-icon">
+        <link type="text/css" rel="stylesheet" href="stylesheet.css">
+    </head>
+
+    <body>
+        <section id="dialogueStart">
+            <div class="playerSelection">
+                <div class="colors">
+
+                    <div class="holder selected r" id="rSelect">
+                        
+                    </div>
+                    <div class="holder g" id="gSelect">
+
+                    </div>
+                    <div class="holder b" id="bSelect">
+
+                    </div>
+                    <div class="holder y" id="ySelect">
+
+                    </div>
+
+                </div>
+
+                <div class="select">
+
+                    <h1>select<br>players!</h1>
+                    <button><p>Let's go</p></button>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="board">
+            <div class="boardWrapper">
+
+                <div class="locker rLocker">
+
+                    <div class="holder" id="rHolder1">
+                        
+                    </div>
+                    <div class="holder" id="rHolder2">
+
+                    </div>
+                    <div class="holder" id="rHolder3">
+
+                    </div>
+                    <div class="holder" id="rHolder4">
+
+                    </div>
+
+                </div>
+
+                <div class="path gPath">
+
+                    <div class="block" id="g6"></div>
+                    <div class="block" id="g7"></div>
+                    <div class="block" id="g8"></div>
+                    <div class="block" id="g5"></div>
+                    <div class="block dark" id="G1"></div>
+                    <div class="block dark" id="g9"></div>
+                    <div class="block dark safeBlock" id="g4">
+                        <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="star" class="svg-inline--fa fa-star fa-w-18" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M528.1 171.5L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6zM388.6 312.3l23.7 138.4L288 385.4l-124.3 65.3 23.7-138.4-100.6-98 139-20.2 62.2-126 62.2 126 139 20.2-100.6 98z"></path></svg>
+                    </div>
+                    <div class="block dark" id="G2"></div>
+                    <div class="block" id="g10"></div>
+                    <div class="block" id="g3"></div>
+                    <div class="block dark" id="G3"></div>
+                    <div class="block" id="g11"></div>
+                    <div class="block" id="g2"></div>
+                    <div class="block dark" id="G4"></div>
+                    <div class="block" id="g12"></div>
+                    <div class="block" id="g1"></div>
+                    <div class="block dark" id="G5"></div>
+                    <div class="block" id="g13"></div>
+
+                </div>
+
+                <div class="locker gLocker">
+
+                    <div class="holder" id="gHolder1">
+
+                    </div>
+                    <div class="holder" id="gHolder2">
+
+                    </div>
+                    <div class="holder" id="gHolder3">
+
+                    </div>
+                    <div class="holder" id="gHolder4">
+
+                    </div>
+                    
+                </div>
+
+                <div class="path rPath">
+                    
+                    <div class="block" id="r8"></div>
+                    <div class="block dark" id="r9"></div>
+                    <div class="block" id="r10"></div>
+                    <div class="block" id="r11"></div>
+                    <div class="block" id="r12"></div>
+                    <div class="block" id="r13"></div>
+                    <div class="block" id="r7"></div>
+                    <div class="block dark" id="R1"></div>
+                    <div class="block dark" id="R2"></div>
+                    <div class="block dark" id="R3"></div>
+                    <div class="block dark" id="R4"></div>
+                    <div class="block dark" id="R5"></div>
+                    <div class="block" id="r6"></div>
+                    <div class="block" id="r5"></div>
+                    <div class="block dark safeBlock" id="r4">
+                        <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="star" class="svg-inline--fa fa-star fa-w-18" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M528.1 171.5L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6zM388.6 312.3l23.7 138.4L288 385.4l-124.3 65.3 23.7-138.4-100.6-98 139-20.2 62.2-126 62.2 126 139 20.2-100.6 98z"></path></svg>
+                    </div>
+                    <div class="block" id="r3"></div>
+                    <div class="block" id="r2"></div>
+                    <div class="block" id="r1"></div>
+
+                </div>
+
+                <div class="endGame">
+                    
+                </div>
+
+                <div class="path yPath">
+                    
+                    <div class="block" id="y1"></div>
+                    <div class="block" id="y2"></div>
+                    <div class="block" id="y3"></div>
+                    <div class="block dark safeBlock" id="y4">
+                        <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="star" class="svg-inline--fa fa-star fa-w-18" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M528.1 171.5L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6zM388.6 312.3l23.7 138.4L288 385.4l-124.3 65.3 23.7-138.4-100.6-98 139-20.2 62.2-126 62.2 126 139 20.2-100.6 98z"></path></svg>
+                    </div>
+                    <div class="block" id="y5"></div>
+                    <div class="block" id="y6"></div>
+                    <div class="block dark" id="Y5"></div>
+                    <div class="block dark" id="Y4"></div>
+                    <div class="block dark" id="Y3"></div>
+                    <div class="block dark" id="Y2"></div>
+                    <div class="block dark" id="Y1"></div>
+                    <div class="block" id="y7"></div>
+                    <div class="block" id="y13"></div>
+                    <div class="block" id="y12"></div>
+                    <div class="block" id="y11"></div>
+                    <div class="block" id="y10"></div>
+                    <div class="block dark" id="y9"></div>
+                    <div class="block" id="y8"></div>
+
+                </div>
+                
+                <div class="locker bLocker">
+
+                    <div class="holder" id="bHolder1">
+
+                    </div>
+                    <div class="holder" id="bHolder2">
+
+                    </div>
+                    <div class="holder" id="bHolder3">
+
+                    </div>
+                    <div class="holder" id="bHolder4">
+
+                    </div>
+                    
+                </div>
+                
+                <div class="path bPath">
+                    
+                    <div class="block" id="b13"></div>
+                    <div class="block dark" id="B5"></div>
+                    <div class="block" id="b1"></div>
+                    <div class="block" id="b12"></div>
+                    <div class="block dark" id="B4"></div>
+                    <div class="block" id="b2"></div>
+                    <div class="block" id="b11"></div>
+                    <div class="block dark" id="B3"></div>
+                    <div class="block" id="b3"></div>
+                    <div class="block" id="b10"></div>
+                    <div class="block dark" id="B2"></div>
+                    <div class="block dark safeBlock" id="b4">
+                        <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="star" class="svg-inline--fa fa-star fa-w-18" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M528.1 171.5L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6zM388.6 312.3l23.7 138.4L288 385.4l-124.3 65.3 23.7-138.4-100.6-98 139-20.2 62.2-126 62.2 126 139 20.2-100.6 98z"></path></svg>
+                    </div>
+                    <div class="block dark" id="b9"></div>
+                    <div class="block dark" id="B1"></div>
+                    <div class="block" id="b5"></div>
+                    <div class="block" id="b8"></div>
+                    <div class="block" id="b7"></div>
+                    <div class="block" id="b6"></div>
+
+                </div>
+                
+                <div class="locker yLocker">
+
+                    <div class="holder" id="yHolder1">
+
+                    </div>
+                    <div class="holder" id="yHolder2">
+
+                    </div>
+                    <div class="holder" id="yHolder3">
+
+                    </div>
+                    <div class="holder" id="yHolder4">
+
+                    </div>
+                    
+                </div>
+                
+            </div>
+        </section>
+        
+        <section class="stats">
+
+            <div class="move">
+                <h1></h1>
+                <h2>player's turn!</h2>
+            </div>
+
+            <div class="dice">
+                <label for="val"><h2>dice value</h2></label>
+                <div class="value">
+                    <input type="number" placeholder="1-6" id="val" max="6" min="1">
+                    <button type="submit" value="submit"><p>submit</p></button>
+                </div>
+                <br>
+                <div class="roll">
+                    <div id="dice">
+                        
+                    </div>
+                    <button>random</button>
+                </div>
+            </div>
+
+            <div class="score">
+                <h1>score</h1>
+                <br>
+                <div class="playerScores">
+
+                    <div class="holder r" id="rScore">
+                        
+                    </div>
+                    <div class="holder g" id="gScore">
+
+                    </div>
+                    <div class="holder b" id="bScore">
+
+                    </div>
+                    <div class="holder y win" id="yScore">
+                        
+                    </div>
+
+                </div>
+            </div>
+            
+        </section>
+        
+        <section id="dialogueFinish" style="display: none;">
+            <div class="playerSelection">
+                <div class="colors">
+
+                    <div class="holder won r" id="rWin">
+                        
+                    </div>
+                    <div class="holder g" id="gWin">
+
+                    </div>
+                    <div class="holder b" id="bWin">
+
+                    </div>
+                    <div class="holder y" id="yWin">
+
+                    </div>
+
+                </div>
+
+                <div class="select">
+
+                    <h1>Player<br>Rank</h1>
+                    <button><p>Play Again</p></button>
+
+                </div>
+            </div>
+        </section>
+
+        <script src="gameplay.js"></script>
+    </body>
+</html>
